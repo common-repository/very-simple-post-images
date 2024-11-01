@@ -1,0 +1,40 @@
+div.vspi_image {
+    float:left;
+    border: 2px solid black;
+    position:relative;
+    margin: 10px;
+    padding: 2px;
+    background: #d4d2d2;
+}
+div.vspi_image a {
+    position:absolute;
+    top:5px;
+    background: white;
+}
+div.vspi_image a.vspi_delete {
+    right:5px;
+}
+div.vspi_image a.vspi_thumb {
+    left:5px;
+}
+
+div.vspi_is_featured_image {
+    border: 5px solid #66cc00;
+}
+
+div.vspi_is_featured_image .featured_marker {
+    background-image: url('featured.png');
+    background-repeat: no-repeat;
+    z-index: 999;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+}
+
+/* >> The Magnificent CLEARFIX << */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; } /* Hides from IE-mac \*/
+.clearfix { display: block; }
